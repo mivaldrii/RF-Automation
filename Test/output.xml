@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221018 16:20:12.192" rpa="false" schemaversion="3">
+<suite id="s1" name="M01-RegistrasiSP1" source="E:\PKL\ROBOT\PABOI\paboi-test\Test\M01-RegistrasiSP1.robot">
+<test id="s1-t1" name="Logged as an user to register SP1" line="12">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Evaluate" library="BuiltIn">
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221018 16:20:12.537" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002609F0AB850&gt;</msg>
+<status status="PASS" starttime="20221018 16:20:12.536" endtime="20221018 16:20:12.537"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>test-type</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.537" endtime="20221018 16:20:12.537"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.537" endtime="20221018 16:20:12.537"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.537" endtime="20221018 16:20:12.538"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.538" endtime="20221018 16:20:12.538"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.538" endtime="20221018 16:20:12.538"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:20:12.538" endtime="20221018 16:20:12.538"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221018 16:20:12.539" level="INFO">Opening browser 'Chrome' to base url 'https://dev.paboi.bigio.id/'.</msg>
+<status status="PASS" starttime="20221018 16:20:12.538" endtime="20221018 16:20:23.111"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" library="Selenium2Library">
+<arg>NONE</arg>
+<doc>Sets the keyword to execute, when a Selenium2Library keyword fails.</doc>
+<msg timestamp="20221018 16:20:23.112" level="INFO">No keyword will be run on failure.</msg>
+<status status="PASS" starttime="20221018 16:20:23.111" endtime="20221018 16:20:23.112"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>${delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221018 16:20:23.113" endtime="20221018 16:20:23.113"/>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221018 16:20:23.113" endtime="20221018 16:20:23.317"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:12.536" endtime="20221018 16:20:23.317"/>
+</kw>
+<kw name="GIVEN User Navigate To Registration Menu" library="RegistrasiSP1">
+<kw name="Click Dropdown College" library="RegistrasiSP1">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="layout-nav"]/div/div[4]/ul/li[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:23.321" level="INFO">Clicking element '//*[@id="layout-nav"]/div/div[4]/ul/li[5]/a'.</msg>
+<status status="PASS" starttime="20221018 16:20:23.320" endtime="20221018 16:20:23.821"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="layout-nav"]/div/div[4]/ul/li[5]/ul/li[7]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:23.822" level="INFO">Clicking element '//*[@id="layout-nav"]/div/div[4]/ul/li[5]/ul/li[7]/a'.</msg>
+<status status="PASS" starttime="20221018 16:20:23.821" endtime="20221018 16:20:27.020"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:23.319" endtime="20221018 16:20:27.020"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:23.318" endtime="20221018 16:20:27.020"/>
+</kw>
+<kw name="WHEN User Choose SP1" library="RegistrasiSP1">
+<kw name="Chooose Specialist" library="RegistrasiSP1">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//input[@id="spesialis"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:27.022" level="INFO">Clicking element '//input[@id="spesialis"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:27.022" endtime="20221018 16:20:27.479"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:27.021" endtime="20221018 16:20:27.479"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:27.021" endtime="20221018 16:20:27.479"/>
+</kw>
+<kw name="AND User Should See Form For SP1" library="RegistrasiSP1">
+<kw name="Verify Form SP1" library="RegistrasiSP1">
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:npa</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:27.693" level="INFO">Current page contains element 'id:npa'.</msg>
+<status status="PASS" starttime="20221018 16:20:27.481" endtime="20221018 16:20:27.693"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>//*[@id="select2-idAsalFK-container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:27.911" level="INFO">Current page contains element '//*[@id="select2-idAsalFK-container"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:27.693" endtime="20221018 16:20:27.911"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>//*[@id="select2-tahunLulus-container"]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:28.128" level="INFO">Current page contains element '//*[@id="select2-tahunLulus-container"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:27.911" endtime="20221018 16:20:28.128"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:nama</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:28.341" level="INFO">Current page contains element 'id:nama'.</msg>
+<status status="PASS" starttime="20221018 16:20:28.128" endtime="20221018 16:20:28.341"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:tempatlahir</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:28.558" level="INFO">Current page contains element 'id:tempatlahir'.</msg>
+<status status="PASS" starttime="20221018 16:20:28.341" endtime="20221018 16:20:28.558"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:tanggallahir</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:28.776" level="INFO">Current page contains element 'id:tanggallahir'.</msg>
+<status status="PASS" starttime="20221018 16:20:28.558" endtime="20221018 16:20:28.776"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:handphone</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:28.991" level="INFO">Current page contains element 'id:handphone'.</msg>
+<status status="PASS" starttime="20221018 16:20:28.776" endtime="20221018 16:20:28.991"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:ip_s1</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:29.209" level="INFO">Current page contains element 'id:ip_s1'.</msg>
+<status status="PASS" starttime="20221018 16:20:28.991" endtime="20221018 16:20:29.209"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:ip_profesi</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:29.428" level="INFO">Current page contains element 'id:ip_profesi'.</msg>
+<status status="PASS" starttime="20221018 16:20:29.209" endtime="20221018 16:20:29.428"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>id:ip_kumulatif</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:29.643" level="INFO">Current page contains element 'id:ip_kumulatif'.</msg>
+<status status="PASS" starttime="20221018 16:20:29.428" endtime="20221018 16:20:29.643"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>name:PSD_Bulan</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:29.861" level="INFO">Current page contains element 'name:PSD_Bulan'.</msg>
+<status status="PASS" starttime="20221018 16:20:29.643" endtime="20221018 16:20:29.861"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>name:PSD_Tahun</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221018 16:20:30.080" level="INFO">Current page contains element 'name:PSD_Tahun'.</msg>
+<status status="PASS" starttime="20221018 16:20:29.861" endtime="20221018 16:20:30.080"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:27.480" endtime="20221018 16:20:30.080"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:27.480" endtime="20221018 16:20:30.080"/>
+</kw>
+<kw name="AND User Fill Sign In Data" library="RegistrasiSP1">
+<arg>${password}</arg>
+<arg>${confirmPas}</arg>
+<kw name="Input Email" library="RegistrasiSP1">
+<kw name="Generate Random String" library="String">
+<var>${rand}</var>
+<arg>3</arg>
+<arg>0123456789</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20221018 16:20:30.082" level="INFO">${rand} = 334</msg>
+<status status="PASS" starttime="20221018 16:20:30.082" endtime="20221018 16:20:30.082"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${email}</var>
+<arg>SEPARATOR=</arg>
+<arg>manbo</arg>
+<arg>${rand}</arg>
+<arg>@gmail.com</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20221018 16:20:30.082" level="INFO">${email} = manbo334@gmail.com</msg>
+<status status="PASS" starttime="20221018 16:20:30.082" endtime="20221018 16:20:30.082"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:30.083" level="INFO">Typing text 'manbo334@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20221018 16:20:30.082" endtime="20221018 16:20:30.816"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${rand}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221018 16:20:30.817" level="INFO">${rand} = 334</msg>
+<status status="PASS" starttime="20221018 16:20:30.816" endtime="20221018 16:20:30.817"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221018 16:20:30.817" level="INFO">${email} = manbo334@gmail.com</msg>
+<status status="PASS" starttime="20221018 16:20:30.817" endtime="20221018 16:20:30.817"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:30.081" endtime="20221018 16:20:30.818"/>
+</kw>
+<kw name="Input Password" library="RegistrasiSP1">
+<arg>${password}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:30.819" level="INFO">Typing text '12345678' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20221018 16:20:30.818" endtime="20221018 16:20:31.524"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:30.818" endtime="20221018 16:20:31.524"/>
+</kw>
+<kw name="Input Confirm Password" library="RegistrasiSP1">
+<arg>${confirmPas}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:konfirmasi</arg>
+<arg>${confirmPas}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:31.525" level="INFO">Typing text '12345678' into text field 'id:konfirmasi'.</msg>
+<status status="PASS" starttime="20221018 16:20:31.525" endtime="20221018 16:20:32.238"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:31.524" endtime="20221018 16:20:32.238"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:30.081" endtime="20221018 16:20:32.238"/>
+</kw>
+<kw name="AND User Fill Profile Data" library="RegistrasiSP1">
+<arg>${asalFK}</arg>
+<arg>${tahunLulus}</arg>
+<arg>${tempatLahir}</arg>
+<arg>${tanggalLahir}</arg>
+<arg>${alamat}</arg>
+<arg>${handphone}</arg>
+<arg>${ipS1}</arg>
+<kw name="Input NPA" library="RegistrasiSP1">
+<kw name="Catenate" library="BuiltIn">
+<var>${npa}</var>
+<arg>SEPARATOR=</arg>
+<arg>256000000</arg>
+<arg>${rand}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20221018 16:20:32.240" level="INFO">${npa} = 256000000334</msg>
+<status status="PASS" starttime="20221018 16:20:32.240" endtime="20221018 16:20:32.240"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:npa</arg>
+<arg>${npa}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:32.241" level="INFO">Typing text '256000000334' into text field 'id:npa'.</msg>
+<status status="PASS" starttime="20221018 16:20:32.240" endtime="20221018 16:20:32.948"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${rand}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221018 16:20:32.948" level="INFO">${rand} = 334</msg>
+<status status="PASS" starttime="20221018 16:20:32.948" endtime="20221018 16:20:32.948"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:32.240" endtime="20221018 16:20:32.949"/>
+</kw>
+<kw name="Input Tanggal Lahir" library="RegistrasiSP1">
+<arg>${tanggalLahir}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:tanggallahir</arg>
+<arg>${tanggalLahir}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:32.949" level="INFO">Typing text '07/04/2000' into text field 'id:tanggallahir'.</msg>
+<status status="PASS" starttime="20221018 16:20:32.949" endtime="20221018 16:20:33.661"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:32.949" endtime="20221018 16:20:33.661"/>
+</kw>
+<kw name="Select Asal FK" library="RegistrasiSP1">
+<arg>${asalFK}</arg>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="select2-idAsalFK-container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:33.662" level="INFO">Clicking element '//*[@id="select2-idAsalFK-container"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:33.662" endtime="20221018 16:20:34.158"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:20:36.168" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:20:34.158" endtime="20221018 16:20:36.168"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>${asalFK}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:36.168" level="INFO">Typing text 'FK Universitas Indonesia' into text field 'xpath:/html/body/span/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20221018 16:20:36.168" endtime="20221018 16:20:36.974"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221018 16:20:36.975" level="INFO">Sending key(s) ('ENTER',) to xpath:/html/body/span/span/span[1]/input element.</msg>
+<msg timestamp="20221018 16:20:37.669" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20221018 16:20:37.669" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20221018 16:20:36.974" endtime="20221018 16:20:37.890"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:33.661" endtime="20221018 16:20:37.890"/>
+</kw>
+<kw name="Select Tahun Lulus" library="RegistrasiSP1">
+<arg>${tahunLulus}</arg>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="select2-tahunLulus-container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:37.891" level="INFO">Clicking element '//*[@id="select2-tahunLulus-container"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:37.891" endtime="20221018 16:20:38.371"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:20:40.374" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:20:38.371" endtime="20221018 16:20:40.374"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>${tahunLulus}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:40.375" level="INFO">Typing text '2022' into text field 'xpath:/html/body/span/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20221018 16:20:40.374" endtime="20221018 16:20:41.067"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221018 16:20:41.068" level="INFO">Sending key(s) ('ENTER',) to xpath:/html/body/span/span/span[1]/input element.</msg>
+<msg timestamp="20221018 16:20:41.760" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20221018 16:20:41.760" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20221018 16:20:41.067" endtime="20221018 16:20:41.976"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:37.890" endtime="20221018 16:20:41.976"/>
+</kw>
+<kw name="Input Nama Lengkap" library="RegistrasiSP1">
+<kw name="Catenate" library="BuiltIn">
+<var>${name}</var>
+<arg>SEPARATOR=</arg>
+<arg>Sebastian Lee T</arg>
+<arg>${rand}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20221018 16:20:41.977" level="INFO">${name} = Sebastian Lee T334</msg>
+<status status="PASS" starttime="20221018 16:20:41.976" endtime="20221018 16:20:41.977"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:nama</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:41.977" level="INFO">Typing text 'Sebastian Lee T334' into text field 'id:nama'.</msg>
+<status status="PASS" starttime="20221018 16:20:41.977" endtime="20221018 16:20:42.703"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221018 16:20:42.704" level="INFO">${name} = Sebastian Lee T334</msg>
+<status status="PASS" starttime="20221018 16:20:42.703" endtime="20221018 16:20:42.704"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${rand}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20221018 16:20:42.704" level="INFO">${rand} = 334</msg>
+<status status="PASS" starttime="20221018 16:20:42.704" endtime="20221018 16:20:42.704"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:41.976" endtime="20221018 16:20:42.704"/>
+</kw>
+<kw name="Input Tempat Lahir" library="RegistrasiSP1">
+<arg>${tempatLahir}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:tempatlahir</arg>
+<arg>${tempatLahir}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:42.706" level="INFO">Typing text 'Jakarta' into text field 'id:tempatlahir'.</msg>
+<status status="PASS" starttime="20221018 16:20:42.705" endtime="20221018 16:20:43.408"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:42.705" endtime="20221018 16:20:43.408"/>
+</kw>
+<kw name="Input Alamat" library="RegistrasiSP1">
+<arg>${alamat}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:alamat</arg>
+<arg>${alamat}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:43.409" level="INFO">Typing text 'Gedung Menara Epa, Lantai 8, Unit 8 - 04 Jalan Senen Raya 135 - 137, Jakarta 10410, INDONESIA' into text field 'id:alamat'.</msg>
+<status status="PASS" starttime="20221018 16:20:43.409" endtime="20221018 16:20:44.257"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:43.408" endtime="20221018 16:20:44.257"/>
+</kw>
+<kw name="Input Nomor Handphone" library="RegistrasiSP1">
+<arg>${handphone}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:handphone</arg>
+<arg>${handphone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:44.258" level="INFO">Typing text '089555664477' into text field 'id:handphone'.</msg>
+<status status="PASS" starttime="20221018 16:20:44.258" endtime="20221018 16:20:44.966"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:44.257" endtime="20221018 16:20:44.966"/>
+</kw>
+<kw name="Input IP S1" library="RegistrasiSP1">
+<arg>${ipS1}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:ip_s1</arg>
+<arg>${ipS1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:44.967" level="INFO">Typing text '3.56' into text field 'id:ip_s1'.</msg>
+<status status="PASS" starttime="20221018 16:20:44.966" endtime="20221018 16:20:45.668"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:44.966" endtime="20221018 16:20:45.668"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:32.239" endtime="20221018 16:20:45.668"/>
+</kw>
+<kw name="AND User Fill Optional Registration Data SP1" library="RegistrasiSP1">
+<arg>${ipProfesi}</arg>
+<arg>${ipKumulatif}</arg>
+<arg>${gelarD}</arg>
+<arg>${gelarB}</arg>
+<kw name="Input Gelar Depan" library="RegistrasiSP1">
+<arg>${gelarD}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:gelar_depan</arg>
+<arg>${gelarD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:45.670" level="INFO">Typing text 'S.Tr.T' into text field 'id:gelar_depan'.</msg>
+<status status="PASS" starttime="20221018 16:20:45.670" endtime="20221018 16:20:46.385"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:45.669" endtime="20221018 16:20:46.385"/>
+</kw>
+<kw name="Input Gelar Belakang" library="RegistrasiSP1">
+<arg>${gelarB}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:gelar_belakang</arg>
+<arg>${gelarB}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:46.387" level="INFO">Typing text 'Ir.' into text field 'id:gelar_belakang'.</msg>
+<status status="PASS" starttime="20221018 16:20:46.386" endtime="20221018 16:20:47.103"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:46.385" endtime="20221018 16:20:47.103"/>
+</kw>
+<kw name="Input IP Profesi" library="RegistrasiSP1">
+<arg>${ipProfesi}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:ip_profesi</arg>
+<arg>${ipProfesi}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:47.104" level="INFO">Typing text '3.54' into text field 'id:ip_profesi'.</msg>
+<status status="PASS" starttime="20221018 16:20:47.104" endtime="20221018 16:20:47.796"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:47.103" endtime="20221018 16:20:47.796"/>
+</kw>
+<kw name="Input IP Komulatif" library="RegistrasiSP1">
+<arg>${ipKumulatif}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:ip_kumulatif</arg>
+<arg>${ipKumulatif}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:47.797" level="INFO">Typing text '3.55' into text field 'id:ip_kumulatif'.</msg>
+<status status="PASS" starttime="20221018 16:20:47.797" endtime="20221018 16:20:48.489"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:47.796" endtime="20221018 16:20:48.489"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:45.669" endtime="20221018 16:20:48.489"/>
+</kw>
+<kw name="AND User Select Faculty" library="RegistrasiSP1">
+<arg>${fakultasKedokteran}</arg>
+<kw name="Select Fakultas Kedokteran" library="RegistrasiSP1">
+<arg>${fakultasKedokteran}</arg>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="select2-idFakultas-container"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:48.491" level="INFO">Clicking element '//*[@id="select2-idFakultas-container"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:48.491" endtime="20221018 16:20:48.968"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>${fakultasKedokteran}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:48.968" level="INFO">Typing text 'FK Universitas Gadjah Mada' into text field 'xpath:/html/body/span/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20221018 16:20:48.968" endtime="20221018 16:20:49.712"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>xpath:/html/body/span/span/span[1]/input</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221018 16:20:49.712" level="INFO">Sending key(s) ('ENTER',) to xpath:/html/body/span/span/span[1]/input element.</msg>
+<msg timestamp="20221018 16:20:50.410" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20221018 16:20:50.410" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20221018 16:20:49.712" endtime="20221018 16:20:50.625"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:48.490" endtime="20221018 16:20:50.625"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:48.490" endtime="20221018 16:20:50.626"/>
+</kw>
+<kw name="AND User Select Exams Period" library="RegistrasiSP1">
+<arg>${psdBulan}</arg>
+<arg>${psdTahun}</arg>
+<kw name="Select Bulan" library="RegistrasiSP1">
+<arg>${psdBulan}</arg>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>name:PSD_Bulan</arg>
+<arg>${psdBulan}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221018 16:20:50.628" level="INFO">Selecting options from selection list 'name:PSD_Bulan' by value 1.</msg>
+<status status="PASS" starttime="20221018 16:20:50.627" endtime="20221018 16:20:52.155"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:50.627" endtime="20221018 16:20:52.155"/>
+</kw>
+<kw name="Select Tahun" library="RegistrasiSP1">
+<arg>${psdTahun}</arg>
+<kw name="Select From List By Value" library="Selenium2Library">
+<arg>name:PSD_Tahun</arg>
+<arg>${psdTahun}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221018 16:20:52.156" level="INFO">Selecting options from selection list 'name:PSD_Tahun' by value 2023.</msg>
+<status status="PASS" starttime="20221018 16:20:52.156" endtime="20221018 16:20:53.682"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:52.155" endtime="20221018 16:20:53.682"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:50.626" endtime="20221018 16:20:53.682"/>
+</kw>
+<kw name="AND User Click Button Register" library="RegistrasiSP1">
+<kw name="Click Button Register" library="RegistrasiSP1">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:20:55.686" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:20:53.684" endtime="20221018 16:20:55.686"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="register-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:20:55.687" level="INFO">Clicking element '//*[@id="register-button"]'.</msg>
+<status status="PASS" starttime="20221018 16:20:55.686" endtime="20221018 16:20:56.149"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:53.683" endtime="20221018 16:20:56.149"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:53.683" endtime="20221018 16:20:56.149"/>
+</kw>
+<kw name="AND User Verify Registrastion Success" library="RegistrasiSP1">
+<kw name="Verify" library="RegistrasiSP1">
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>//*[@id="modal_success_register"]/div/div/div</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20221018 16:20:56.151" endtime="20221018 16:20:56.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:20:58.376" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:20:56.363" endtime="20221018 16:20:58.376"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>//*[@id="modal_success_register"]/div/div/div/div/h3</arg>
+<arg>Registrasi Peserta PPDS Berhasil</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221018 16:20:58.377" level="INFO">Verifying element '//*[@id="modal_success_register"]/div/div/div/div/h3' contains exact text 'Registrasi Peserta PPDS Berhasil'.</msg>
+<status status="PASS" starttime="20221018 16:20:58.376" endtime="20221018 16:20:58.811"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:56.150" endtime="20221018 16:20:58.811"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:56.150" endtime="20221018 16:20:58.812"/>
+</kw>
+<kw name="THEN User Click Ok" library="RegistrasiSP1">
+<kw name="Click Ok" library="RegistrasiSP1">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:21:00.828" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:20:58.813" endtime="20221018 16:21:00.828"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="modal_success_register"]/div/div/div/center/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:00.829" level="INFO">Clicking element '//*[@id="modal_success_register"]/div/div/div/center/a'.</msg>
+<status status="PASS" starttime="20221018 16:21:00.828" endtime="20221018 16:21:02.832"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:58.812" endtime="20221018 16:21:02.832"/>
+</kw>
+<status status="PASS" starttime="20221018 16:20:58.812" endtime="20221018 16:21:02.832"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" starttime="20221018 16:21:02.833" endtime="20221018 16:21:02.833"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221018 16:21:02.834" endtime="20221018 16:21:05.278"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:02.833" endtime="20221018 16:21:05.278"/>
+</kw>
+<tag>positive</tag>
+<tag>register</tag>
+<tag>user</tag>
+<status status="PASS" starttime="20221018 16:20:12.535" endtime="20221018 16:21:05.278"/>
+</test>
+<test id="s1-t2" name="Sign in as an PPDS1 to upload payment proof" line="26">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Evaluate" library="BuiltIn">
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221018 16:21:05.281" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002609F103AC0&gt;</msg>
+<status status="PASS" starttime="20221018 16:21:05.281" endtime="20221018 16:21:05.281"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>test-type</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.281" endtime="20221018 16:21:05.282"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.282" endtime="20221018 16:21:05.282"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.282" endtime="20221018 16:21:05.283"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.283" endtime="20221018 16:21:05.283"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.283" endtime="20221018 16:21:05.283"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:05.283" endtime="20221018 16:21:05.284"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221018 16:21:05.284" level="INFO">Opening browser 'Chrome' to base url 'https://dev.paboi.bigio.id/'.</msg>
+<status status="PASS" starttime="20221018 16:21:05.284" endtime="20221018 16:21:26.392"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" library="Selenium2Library">
+<arg>NONE</arg>
+<doc>Sets the keyword to execute, when a Selenium2Library keyword fails.</doc>
+<msg timestamp="20221018 16:21:26.393" level="INFO">No keyword will be run on failure.</msg>
+<status status="PASS" starttime="20221018 16:21:26.392" endtime="20221018 16:21:26.393"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>${delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221018 16:21:26.393" endtime="20221018 16:21:26.394"/>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221018 16:21:26.394" endtime="20221018 16:21:26.607"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:05.281" endtime="20221018 16:21:26.607"/>
+</kw>
+<kw name="GIVEN User Navigate To Sign In Menu" library="UploadPaymentProof">
+<kw name="Navigate to Sign In Menu" library="UploadPaymentProof">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.open('${urlSignin}');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221018 16:21:26.609" level="INFO">Executing JavaScript:
+window.open('https://dev.paboi.bigio.id/collegium-registration-sign-in');
+Without any arguments.</msg>
+<status status="PASS" starttime="20221018 16:21:26.609" endtime="20221018 16:21:26.869"/>
+</kw>
+<kw name="Switch Window" library="Selenium2Library">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221018 16:21:26.869" endtime="20221018 16:21:27.714"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:26.608" endtime="20221018 16:21:27.714"/>
+</kw>
+<kw name="Verify User in Sign In Page" library="UploadPaymentProof">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Indonesian Orthopedic Association - Registration</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221018 16:21:27.934" level="INFO">Page title is 'Indonesian Orthopedic Association - Registration'.</msg>
+<status status="PASS" starttime="20221018 16:21:27.714" endtime="20221018 16:21:27.934"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:27.714" endtime="20221018 16:21:27.934"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:26.608" endtime="20221018 16:21:27.934"/>
+</kw>
+<kw name="AND User Sign In" library="UploadPaymentProof">
+<arg>${password}</arg>
+<kw name="Input Valid Email" library="UploadPaymentProof">
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:m_email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:27.936" level="INFO">Typing text 'manbo334@gmail.com' into text field 'id:m_email'.</msg>
+<status status="PASS" starttime="20221018 16:21:27.936" endtime="20221018 16:21:28.657"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:27.936" endtime="20221018 16:21:28.657"/>
+</kw>
+<kw name="Input Valid Password" library="UploadPaymentProof">
+<arg>${password}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:m_pass</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:28.658" level="INFO">Typing text '12345678' into text field 'id:m_pass'.</msg>
+<status status="PASS" starttime="20221018 16:21:28.658" endtime="20221018 16:21:29.377"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:28.657" endtime="20221018 16:21:29.377"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:27.935" endtime="20221018 16:21:29.377"/>
+</kw>
+<kw name="AND User Click Sign In" library="UploadPaymentProof">
+<kw name="Click Sign In" library="UploadPaymentProof">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="webform"]/div[4]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:29.379" level="INFO">Clicking element '//*[@id="webform"]/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20221018 16:21:29.379" endtime="20221018 16:21:33.107"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:29.379" endtime="20221018 16:21:33.107"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:29.378" endtime="20221018 16:21:33.107"/>
+</kw>
+<kw name="AND User Click Tab Unggah Berkas" library="UploadPaymentProof">
+<kw name="Click Tab Unggah Berkas" library="UploadPaymentProof">
+<kw name="Click Element" library="Selenium2Library">
+<arg>id:unggah_berkas</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:33.109" level="INFO">Clicking element 'id:unggah_berkas'.</msg>
+<status status="PASS" starttime="20221018 16:21:33.109" endtime="20221018 16:21:33.571"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:33.108" endtime="20221018 16:21:33.571"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:33.108" endtime="20221018 16:21:33.571"/>
+</kw>
+<kw name="AND User Upload Payment Proof" library="UploadPaymentProof">
+<kw name="Upload Payment" library="UploadPaymentProof">
+<kw name="Choose File" library="Selenium2Library">
+<arg>id:payment_proof</arg>
+<arg>E:/PKL/ROBOT/PABOI/paboi-test/Assets/paymentproof.jpeg</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20221018 16:21:33.573" level="INFO">Sending E:\PKL\ROBOT\PABOI\paboi-test\Assets\paymentproof.jpeg to browser.</msg>
+<status status="PASS" starttime="20221018 16:21:33.573" endtime="20221018 16:21:34.020"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:33.572" endtime="20221018 16:21:34.020"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:33.572" endtime="20221018 16:21:34.020"/>
+</kw>
+<kw name="THEN User Submit Payment Proof" library="UploadPaymentProof">
+<kw name="Submit" library="UploadPaymentProof">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="step-2"]/div[2]/center/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:34.022" level="INFO">Clicking element '//*[@id="step-2"]/div[2]/center/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221018 16:21:34.022" endtime="20221018 16:21:38.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:21:40.346" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221018 16:21:38.342" endtime="20221018 16:21:40.346"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:34.021" endtime="20221018 16:21:40.346"/>
+</kw>
+<kw name="Confirm Submit File" library="UploadPaymentProof">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="modal_success_register"]/div/div/div/center/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:40.347" level="INFO">Clicking element '//*[@id="modal_success_register"]/div/div/div/center/a'.</msg>
+<status status="PASS" starttime="20221018 16:21:40.347" endtime="20221018 16:21:40.795"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:40.346" endtime="20221018 16:21:40.795"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:34.021" endtime="20221018 16:21:40.796"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" starttime="20221018 16:21:40.799" endtime="20221018 16:21:40.799"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221018 16:21:40.799" endtime="20221018 16:21:43.121"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:40.797" endtime="20221018 16:21:43.121"/>
+</kw>
+<tag>positive</tag>
+<tag>register</tag>
+<tag>user</tag>
+<status status="PASS" starttime="20221018 16:21:05.280" endtime="20221018 16:21:43.122"/>
+</test>
+<test id="s1-t3" name="Login as an admin collegium to verify user" line="35">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Evaluate" library="BuiltIn">
+<var>${chrome_options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20221018 16:21:43.124" level="INFO">${chrome_options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000002609F1010F0&gt;</msg>
+<status status="PASS" starttime="20221018 16:21:43.124" endtime="20221018 16:21:43.124"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>test-type</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.125" endtime="20221018 16:21:43.125"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--no-sandbox</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.125" endtime="20221018 16:21:43.125"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-dev-shm-usage</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.125" endtime="20221018 16:21:43.126"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-extensions</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.126" endtime="20221018 16:21:43.126"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>--disable-gpu</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.126" endtime="20221018 16:21:43.126"/>
+</kw>
+<kw name="Call Method" library="BuiltIn">
+<arg>${chrome_options}</arg>
+<arg>add_argument</arg>
+<arg>start-maximized</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" starttime="20221018 16:21:43.126" endtime="20221018 16:21:43.127"/>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<arg>options=${chrome_options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221018 16:21:43.128" level="INFO">Opening browser 'Chrome' to base url 'https://dev.paboi.bigio.id/'.</msg>
+<status status="PASS" starttime="20221018 16:21:43.127" endtime="20221018 16:21:50.672"/>
+</kw>
+<kw name="Register Keyword To Run On Failure" library="Selenium2Library">
+<arg>NONE</arg>
+<doc>Sets the keyword to execute, when a Selenium2Library keyword fails.</doc>
+<msg timestamp="20221018 16:21:50.672" level="INFO">No keyword will be run on failure.</msg>
+<status status="PASS" starttime="20221018 16:21:50.672" endtime="20221018 16:21:50.672"/>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<arg>${delay}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221018 16:21:50.672" endtime="20221018 16:21:50.673"/>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20221018 16:21:50.673" endtime="20221018 16:21:50.886"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:43.124" endtime="20221018 16:21:50.886"/>
+</kw>
+<kw name="GIVEN User Navigate To Login Menu" library="VerifyPPDS">
+<kw name="Navigate to Log In Menu" library="VerifyPPDS">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.open('${urlLogin}');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20221018 16:21:50.888" level="INFO">Executing JavaScript:
+window.open('https://dev.admin.paboi.bigio.id/login');
+Without any arguments.</msg>
+<status status="PASS" starttime="20221018 16:21:50.888" endtime="20221018 16:21:51.135"/>
+</kw>
+<kw name="Switch Window" library="Selenium2Library">
+<arg>locator=NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221018 16:21:51.136" endtime="20221018 16:21:51.994"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:50.887" endtime="20221018 16:21:51.994"/>
+</kw>
+<kw name="Verify User In Login Page" library="VerifyPPDS">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>PABOI</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221018 16:21:54.629" level="INFO">Page title is 'PABOI'.</msg>
+<status status="PASS" starttime="20221018 16:21:51.994" endtime="20221018 16:21:54.629"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:51.994" endtime="20221018 16:21:54.629"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:50.887" endtime="20221018 16:21:54.629"/>
+</kw>
+<kw name="AND User Login As An Admin Collegium" library="VerifyPPDS">
+<arg>${emailAdminCollegium}</arg>
+<arg>${passwordAdmin}</arg>
+<kw name="Input Valid Admin Collegium Email" library="VerifyPPDS">
+<arg>${emailAdminCollegium}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:emailID</arg>
+<arg>${emailAdminCollegium}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:54.631" level="INFO">Typing text 'adminkolegium@paboi.co.id' into text field 'name:emailID'.</msg>
+<status status="PASS" starttime="20221018 16:21:54.631" endtime="20221018 16:21:55.399"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:54.631" endtime="20221018 16:21:55.399"/>
+</kw>
+<kw name="Input Valid Admin Collegium Password" library="VerifyPPDS">
+<arg>${passwordAdmin}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:password</arg>
+<arg>${passwordAdmin}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:55.400" level="INFO">Typing text 'p4b01ku' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20221018 16:21:55.400" endtime="20221018 16:21:56.110"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:55.399" endtime="20221018 16:21:56.110"/>
+</kw>
+<kw name="Click Login Button" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div[2]/div/form/div[3]/button/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:21:56.111" level="INFO">Clicking element '//*[@id="root"]/div[2]/div[2]/div/form/div[3]/button/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:21:56.111" endtime="20221018 16:21:56.587"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:03.602" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20221018 16:21:56.587" endtime="20221018 16:22:03.602"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:56.110" endtime="20221018 16:22:03.602"/>
+</kw>
+<status status="PASS" starttime="20221018 16:21:54.630" endtime="20221018 16:22:03.603"/>
+</kw>
+<kw name="AND Admin Search PPDS1 Candidate" library="VerifyPPDS">
+<kw name="Go To Registrasi SP1 Menu" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[1]/div/div/div[2]/a[2]/div/div/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:03.604" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[1]/div/div/div[2]/a[2]/div/div/span'.</msg>
+<status status="PASS" starttime="20221018 16:22:03.604" endtime="20221018 16:22:04.188"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:03.604" endtime="20221018 16:22:04.188"/>
+</kw>
+<kw name="Search SP1 Candidate" library="VerifyPPDS">
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:nama</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:04.189" level="INFO">Typing text 'Sebastian Lee T334' into text field 'id:nama'.</msg>
+<status status="PASS" starttime="20221018 16:22:04.189" endtime="20221018 16:22:04.984"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:09.986" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:04.984" endtime="20221018 16:22:09.986"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:04.188" endtime="20221018 16:22:09.986"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:03.603" endtime="20221018 16:22:09.986"/>
+</kw>
+<kw name="AND Admin Verify Payment Proof PPDS1 Candidate" library="VerifyPPDS">
+<kw name="Go To SP1 Details" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[10]/div/button/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:09.988" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[10]/div/button/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:22:09.988" endtime="20221018 16:22:10.479"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath:/html/body/div[3]/div[3]/ul/li</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:10.479" level="INFO">Clicking element 'xpath:/html/body/div[3]/div[3]/ul/li'.</msg>
+<status status="PASS" starttime="20221018 16:22:10.479" endtime="20221018 16:22:11.002"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:16.006" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:11.002" endtime="20221018 16:22:16.006"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:09.988" endtime="20221018 16:22:16.006"/>
+</kw>
+<kw name="Go To SP1 Info Tab" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[4]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:16.007" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[4]/span'.</msg>
+<status status="PASS" starttime="20221018 16:22:16.007" endtime="20221018 16:22:16.514"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:16.006" endtime="20221018 16:22:16.514"/>
+</kw>
+<kw name="Verify Payment Proof SP1" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[5]/button[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:16.515" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div/div[5]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:22:16.515" endtime="20221018 16:22:16.984"/>
+</kw>
+<kw name="Generate Random String" library="String">
+<var>${randnum}</var>
+<arg>3</arg>
+<arg>0123456789</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20221018 16:22:16.984" level="INFO">${randnum} = 250</msg>
+<status status="PASS" starttime="20221018 16:22:16.984" endtime="20221018 16:22:16.984"/>
+</kw>
+<kw name="Generate Random String" library="String">
+<var>${randchar}</var>
+<arg>1</arg>
+<arg>ABCDEFGHIJKLMNOPQRSTUVWXYZ</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20221018 16:22:16.985" level="INFO">${randchar} = X</msg>
+<status status="PASS" starttime="20221018 16:22:16.985" endtime="20221018 16:22:16.985"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${colnum}</var>
+<arg>SEPARATOR=-</arg>
+<arg>${randchar}</arg>
+<arg>${randnum}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20221018 16:22:16.985" level="INFO">${colnum} = X-250</msg>
+<status status="PASS" starttime="20221018 16:22:16.985" endtime="20221018 16:22:16.985"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>name:kolegium_no</arg>
+<arg>${colnum}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:16.986" level="INFO">Typing text 'X-250' into text field 'name:kolegium_no'.</msg>
+<status status="PASS" starttime="20221018 16:22:16.986" endtime="20221018 16:22:17.715"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:22.718" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:17.715" endtime="20221018 16:22:22.718"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:16.514" endtime="20221018 16:22:22.718"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:09.987" endtime="20221018 16:22:22.718"/>
+</kw>
+<kw name="AND Admin Acc PPDS1 Participant" library="VerifyPPDS">
+<kw name="Click Terima Button" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[4]/span[2]/div/button[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:22.720" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[4]/span[2]/div/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:22:22.720" endtime="20221018 16:22:23.211"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:28.219" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:23.211" endtime="20221018 16:22:28.219"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:22.719" endtime="20221018 16:22:28.219"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:22.719" endtime="20221018 16:22:28.219"/>
+</kw>
+<kw name="AND Admin Search PPDS1 Participant" library="VerifyPPDS">
+<kw name="Go To PPDS1 Menu" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[1]/div/div/div[2]/a[4]/div/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:28.221" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[1]/div/div/div[2]/a[4]/div/div'.</msg>
+<status status="PASS" starttime="20221018 16:22:28.221" endtime="20221018 16:22:28.731"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:28.220" endtime="20221018 16:22:28.731"/>
+</kw>
+<kw name="Search SP1 Participant" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:28.732" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20221018 16:22:28.732" endtime="20221018 16:22:29.194"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/input</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:29.195" level="INFO">Typing text 'Sebastian Lee T334' into text field '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[1]/div[2]/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20221018 16:22:29.194" endtime="20221018 16:22:29.937"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:34.945" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:29.937" endtime="20221018 16:22:34.945"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:28.731" endtime="20221018 16:22:34.945"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:28.220" endtime="20221018 16:22:34.946"/>
+</kw>
+<kw name="THEN Admin Pass PPDS1 Participant As A Member" library="VerifyPPDS">
+<kw name="Go To SP1 Participant Details" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[9]/div/button/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:34.948" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[9]/div/button/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:22:34.947" endtime="20221018 16:22:35.438"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>xpath:/html/body/div[3]/div[3]/ul/li</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:35.438" level="INFO">Clicking element 'xpath:/html/body/div[3]/div[3]/ul/li'.</msg>
+<status status="PASS" starttime="20221018 16:22:35.438" endtime="20221018 16:22:35.919"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:40.925" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:35.919" endtime="20221018 16:22:40.925"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:34.947" endtime="20221018 16:22:40.925"/>
+</kw>
+<kw name="Go To SP1 Participant Info Tab" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:40.926" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[1]/div[3]/span'.</msg>
+<status status="PASS" starttime="20221018 16:22:40.926" endtime="20221018 16:22:41.404"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:40.925" endtime="20221018 16:22:41.404"/>
+</kw>
+<kw name="Pass Participant As A Member" library="VerifyPPDS">
+<kw name="Click Element" library="Selenium2Library">
+<arg>//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[5]/div[2]/button[1]/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:41.405" level="INFO">Clicking element '//*[@id="root"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div[5]/div[2]/button[1]/span[1]'.</msg>
+<status status="PASS" starttime="20221018 16:22:41.405" endtime="20221018 16:22:41.891"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221018 16:22:46.904" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221018 16:22:41.891" endtime="20221018 16:22:46.904"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>/html/body/div[3]/div/div/div[2]/div[2]/button/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221018 16:22:46.905" level="INFO">Clicking element '/html/body/div[3]/div/div/div[2]/div[2]/button/span[1]'.</msg>
+<msg timestamp="20221018 16:22:47.124" level="FAIL">Element with locator '/html/body/div[3]/div/div/div[2]/div[2]/button/span[1]' not found.</msg>
+<status status="FAIL" starttime="20221018 16:22:46.905" endtime="20221018 16:22:47.127"/>
+</kw>
+<status status="FAIL" starttime="20221018 16:22:41.404" endtime="20221018 16:22:47.128"/>
+</kw>
+<status status="FAIL" starttime="20221018 16:22:34.947" endtime="20221018 16:22:47.129"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Run Keyword If Test Failed" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221018 16:22:47.591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221018 16:22:47.130" endtime="20221018 16:22:47.591"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:47.130" endtime="20221018 16:22:47.591"/>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221018 16:22:47.592" endtime="20221018 16:22:49.910"/>
+</kw>
+<status status="PASS" starttime="20221018 16:22:47.130" endtime="20221018 16:22:49.910"/>
+</kw>
+<tag>positive</tag>
+<tag>register</tag>
+<status status="FAIL" starttime="20221018 16:21:43.123" endtime="20221018 16:22:49.911">Element with locator '/html/body/div[3]/div/div/div[2]/div[2]/button/span[1]' not found.</status>
+</test>
+<status status="FAIL" starttime="20221018 16:20:12.195" endtime="20221018 16:22:49.912"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="1" skip="0">positive</stat>
+<stat pass="2" fail="1" skip="0">register</stat>
+<stat pass="2" fail="0" skip="0">user</stat>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="M01-RegistrasiSP1">M01-RegistrasiSP1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
